@@ -19,7 +19,7 @@ class BST {
     BST();
     ~BST();
     void add(T);
-    int deep();
+    int depth();
     int search(T);
 };
 
@@ -85,7 +85,7 @@ int BST<T>::depthTree(Node* root) {
 }
 
 template <typename T>
-int BST<T>::deep() {
+int BST<T>::depth() {
     return depthTree(root);
 }
 #endif  // INCLUDE_BST_H_
